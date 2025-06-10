@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votación Distribuido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Sistema de Votación en Tiempo Real</h1>
+    <div class="status-bar">
+        Estado de Conexión: <span id="status">Conectando...</span>
+    </div>
+
+    <div class="voting-section">
+        <div class="option">
+            <h2>Opción A</h2>
+            <button onclick="votar('Opcion A')">Votar por A</button>
+            <p>Total de Votos: <span class="vote-count" id="votos-Opcion A">0</span></p>
+        </div>
+        <div class="option">
+            <h2>Opción B</h2>
+            <button onclick="votar('Opcion B')">Votar por B</button>
+            <p>Total de Votos: <span class="vote-count" id="votos-Opcion B">0</span></p>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
